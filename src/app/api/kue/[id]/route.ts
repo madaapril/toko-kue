@@ -13,7 +13,7 @@ interface RouteParams {
 // atau saat request pertama (ISR-like behavior)
 export const dynamic = 'force-static'; 
 
-export async function GET({ params }: RouteParams) {
+export async function GET(request: Request, { params }: RouteParams) {
   // Ingat, di Next.js 15+, akses ke params di Route Handlers juga bisa jadi asynchronous
   // jika Next.js mendeteksinya sebagai 'dynamic' (tergantung bagaimana ia dipanggil atau dikonfigurasi).
   // Namun, untuk Route Handlers, parameter kedua biasanya langsung berisi objek params yang sudah di-resolve.

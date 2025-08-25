@@ -17,7 +17,7 @@ import kueLengkap from '@/data/daftar-kue.json'; // Impor data dummy kita
 // atau saat request pertama (ISR-like behavior)
 export const dynamic = 'force-static'; 
 
-export async function GET() {
+export async function GET(request: Request) {
   // Di sini kita gak perlu ngapa-ngapain request-nya karena mau ngambil semua
   
   // Langsung kembalikan semua data kue sebagai JSON
