@@ -60,7 +60,7 @@ export default async function HalamanDetailKue({ params }: DetailKuePageProps) {
     return (
       <div className="text-center py-10">
         <h1 className="text-2xl font-bold text-red-600">Kue Tidak Ditemukan!</h1>
-        <p className="mt-4">Maaf, kue dengan ID '{idKue}' tidak dapat kami temukan.</p>
+        <p className="mt-4">Maaf, kue dengan ID {idKue} tidak dapat kami temukan.</p>
         <Link href="/" className="mt-6 inline-block bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
           Kembali ke Daftar Kue
         </Link>
