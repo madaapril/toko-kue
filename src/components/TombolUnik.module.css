@@ -1,0 +1,18 @@
+/* Nama class .container dan .tombol ini cuma lokal buat modul ini */
+.container {
+  padding: 1rem;
+  background-color: #e0e0e0;
+}
+ 
+.tombol {
+  background-color: rebeccapurple;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.tombol:hover {
+  background-color: darkorchid;
+}
